@@ -1,0 +1,29 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <title>Register a TaskEase Account!</title>
+    </header>
+    <body>
+        <div class="imgcontainer">
+            <img src="assets/logo.svg" alt="Avatar" class="avatar">
+            <p>TaskEase</p>
+        </div>
+        <form action="php/register.php" method="post">
+            <div class="container">
+                <label class="input_guide" for="email">Email</label>
+                <input type="text" placeholder="Enter Email" class="text_field" name="email" required>
+
+                <label class="input_guide" for="uname">Username</label>
+                <input type="text" placeholder="Enter Username" class="text_field" name="uname" required>
+            
+                <label class="input_guide" for="psw">Password</label>
+                <input type="password" placeholder="Enter Password" class="text_field" name="psw" required>
+            
+                <button class="login-reg-button" type="submit">Register</button>
+            </div>
+        </form>
+    </body>
+</html>
