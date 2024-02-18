@@ -119,8 +119,35 @@ img.avatar {
     margin-right: 16px;
 }
 
+.login_btn:hover {
+    background-color: rgba(255, 183, 128, 0.8);
+    color: #4e2600;
+    border: 3px solid #ffb780;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    width: 200px;
+    height: 48px;
+    margin-right: 16px;
+}
+
 .register_btn {
     background-color: #201a17;
+    color: #ffb77f;
+    border: 1px solid #ffdcc4;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    width: 200px;
+    height: 48px;
+}
+
+.register_btn:hover {
+    background-color: rgba(32, 26, 23, 0.8);
     color: #ffb77f;
     border: 1px solid #ffdcc4;
     border-radius: 32px;
@@ -324,4 +351,94 @@ img.avatar {
     border: none;
     background-color: transparent;
     width: 24px;
+}
+
+.add_task_form {
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    margin: 32px;
+}
+
+.add_task_text_field {
+    display: flex;
+    background-color: #201a17;
+    color: #ece0da;
+    caret-color: #ece0da;
+    border-radius: 5px;
+    height: 48px;
+    font-size: 16px;
+}
+
+.add_task_top {
+    display: flex;
+    width: 90%;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add_task_btn {
+    background-color: #ffb780;
+    color: #4e2600;
+    border: 3px solid #ffb780;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    width: 300px;
+    height: 48px;
+    margin: 16px;
+    margin-left: 32px;
+}
+
+.text_area {
+    border: 3px solid #201a17;
+    background-color: #201a17;
+    color: #ffb780;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 16px;
+    min-height: 400px;
+    height: auto;
+    width: 90%;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+.add_task_proc_title {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 32px;
+    color: #ffb780;
+}
+
+.gallery_pic {
+    border: none;
+    background-color: transparent;
+    width: 256px;
+}
+
+.scroll {
+    margin: 64px;
+}
+
+.features_div {
+    margin: 100px;
+}
+
+.features_title {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    color: #ece0da;
 }
