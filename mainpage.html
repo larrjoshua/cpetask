@@ -8,12 +8,13 @@
     </header>
     <body>
         <header class="topbar">
-            <button class="top_button"><img class="top_button" src="assets/search.svg"/></button>
+            <button id="logoutButton" class="top_button"><img class="top_button" src="assets/search.svg"/></button>
             <h1 class="center-text">TaskEase</h1>
             <button class="top_button"><img class="top_button" src="assets/logout.svg"/></button>
         </header>
         <div class="addbtn-container">
-            <button class="add_task_btn">Add Task</button>
+            <!-- Call redirectToAddTaskPage() function when button is clicked -->
+            <button class="add_task_btn" onclick="redirectToAddTaskPage()">Add Task</button>
         </div>
         <div class="task_grid">
             <div class="grid-item1">
@@ -23,7 +24,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item2">
@@ -33,7 +34,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item3">
@@ -43,7 +44,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item4">
@@ -53,7 +54,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item5">
@@ -63,7 +64,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item6">
@@ -73,7 +74,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item1">
@@ -83,7 +84,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item4">
@@ -93,7 +94,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item5">
@@ -103,7 +104,7 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
             <div class="grid-item2">
@@ -113,10 +114,30 @@
                     <button class="edit_btn"><img class="edit_btn" src="assets/delete.svg"/></button>
                 </div>
                 <div class="item_bottom">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>"No task details yet."</p>
                 </div>
             </div>
         </div>
+        
+
+        <script>
+            // Function to handle logout
+            // Add event listener to the logout button
+            document.getElementById("logoutButton").addEventListener("click", logout);
+    
+    
+            function logout() {
+                // Redirect to frontpage.html after logout
+                window.location.href = "frontpage.html";
+            }
+    
+            // Function to handle button click and redirect to addtask.html
+            function redirectToAddTaskPage() {
+                window.location.href = "addtask.html";
+            }
+    
+    
+        </script>
     </body>
 </html>
 
