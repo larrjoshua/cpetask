@@ -197,6 +197,18 @@ img.avatar {
     font-size: 24px;
 }
 
+.about_us {
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    color: #ffb77f;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: italic;
+    font-variation-settings: "slnt" 0;
+    font-size: 19px;
+}
 .app_motto {
     color: #c6cb96;
     font-family: "Inter", sans-serif;
@@ -205,6 +217,16 @@ img.avatar {
     font-style: normal;
     font-variation-settings: "slnt" 0;
     font-size: 32px;
+}
+
+.app_us {
+    color: #c6cb96;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 1px;
 }
 
 .topbar {
