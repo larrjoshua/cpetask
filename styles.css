@@ -378,6 +378,22 @@ img.avatar {
     justify-content: space-between;
 }
 
+.add_task_uname_entry {
+    display: flex;
+    width: 80%;
+    text-align: left;
+    align-items: center;
+}
+
+.username_label {
+    margin-right: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #ffb780;
+}
+
 .add_task_btn {
     background-color: #ffb780;
     color: #4e2600;
