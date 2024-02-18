@@ -1,0 +1,12 @@
+{
+    "require": {
+        "thingengineer/mysqli-database-class": "dev-master"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.1",
+        "codeception/module-phpbrowser": "*",
+        "codeception/module-asserts": "*",
+        "codeception/module-rest": "^3.3"
+    }
+}
+      

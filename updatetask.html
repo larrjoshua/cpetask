@@ -1,0 +1,26 @@
+<html>
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <title>Add a Task</title>
+    </header>
+    <body>
+
+        <form class="add_task_form" action="php/update.php" method="post"> 
+            <div>
+                <h1 class="add_task_proc_title">Update your Task</h1>
+            </div>
+            <div class="add_task_uname_entry">
+                <label class="username_label" for="username">Username:</label>
+                <input id="username" class="add_task_text_field" type="text" placeholder="Enter your Username" name="uname1" required>
+            </div>
+            <header class="add_task_top">
+                <input type="text" placeholder="Task Title" class="add_task_text_field" name="task_title" required>
+                <button class="add_task_btn" type="submit">Update Task</button>
+            </header>
+            <textarea class="text_area" name="task_details" placeholder="Enter your task details here..."></textarea>
+        </form>
+    </body>
+</html>

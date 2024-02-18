@@ -1,0 +1,24 @@
+namespace: Tests
+support_namespace: Support
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/Support/Data
+    support: tests/Support
+    envs: tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+
+# Define suites for different types of tests
+suites:
+    api:
+        path: tests/api
+        actor: ApiTester
+        modules:
+            enabled:
+                - REST:
+                    url: 'http://localhost/forTesting/Task9/API.php'
+                    depends: PhpBrowser
+    
